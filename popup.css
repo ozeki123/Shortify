@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html{
+  border-radius: 15px;
+}
+
+#popup-container{
+  width: 250px;
+  height: 400px;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: overlay;
+}
+
+.popup-modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+  background-color: white;
+  width: 170px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#modal-close{
+  height: 18px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.playlist-input-wrapper{
+  width: 100%;
+}
+
+#playlist-input-label{
+  font-size: 10px;
+}
+
+#playlist-input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #c4c6cf;
+  border-radius: 4px;
+  font-size: 11px;
+  text-indent: 10px;
+  margin-top: 3px;
+}
+
+#playlist-input::placeholder{
+  color: #8f95b9;
+}
+
+.modal-buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  float: right;
+}
+
+.modal-button{
+  border: none;
+  border-radius: 4px;
+  font-size: 10px;
+  width: 70px;
+  height: 29px;
+  cursor: pointer;
+}
+
+#modal-save{
+  color: white;
+  background: #3a25f8;
+}
+
+#modal-cancel{
+  margin-right: 7px;
+}
+
+#modal-text-limit{
+  font-size: 8px;
+  color: #8f95b9;
+}
+
+.popup-title{
+  height: 46px;
+  display: flex;
+  align-items: center;
+  background-color: #f7f8ff;
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-bottom: 8px;
+}
+
+#shortify-logo{
+  height: 21px;
+}
+
+#popup-heading{
+  line-height: 40px;
+  font-size: 1rem;
+  color: #2b2d36;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+#save-wrapper{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(118 125 132 / 42%) 46px 34px 81px;
+}
+
+.input-wrapper{
+  position: relative;
+}
+
+#link-icon{
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  height: 13px;
+}
+
+.input{
+  border-radius: 4px;
+  border: 1px solid #dfe0e7;
+  width: 175px;
+  height: 29px;
+  line-height: 20px;
+  text-indent: 25px;
+  font-size: 12px;
+  transition: all 0.5s ease-in;
+  outline: none;
+}
+
+.input::placeholder{
+  color: #8f95b9;
+}
+
+.input:focus{
+  transition: all 0.5s ease-in;
+  border-color: #3a25f8;
+}
+
+#search-input{
+  width: 100%;
+}
+
+#popup-input{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#popup-input::placeholder{
+  color: #8f95b9;
+}
+
+#popup-input:focus{
+  transition: all 0.5s ease-in;
+  border-color: #3a25f8;
+}
+
+#save-button{
+  background-color: #3a25f8;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.096) 5px 15px 24px;
+  color: white;
+  border: none;
+  width: 60px;
+  height: 31px;
+  line-height: 24px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.shorts-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.save-icon-wrapper{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#save-icon{
+  height: 16px;
+}
+
+
+#save-text{
+  padding-left: 2px;
+  font-weight: 500;
+  color: #8f95b9;
+}
+
+
+.small{
+  color: #8f95b9;
+  font-size: 9px;
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+#shorts-title{
+  font-size: 0.9rem;
+  color: #2b2d36;
+}
+
+#shorts-list{
+  /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 10px;
+}
+
+.list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#remove-short{
+  position: absolute;
+  left: -19px;
+  top: 3px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.item-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+#youtube-logo{
+  height: 16px;
+}
+
+.list-item:hover{
+  text-decoration: underline;
+}
+
+.item-link{
+  white-space: nowrap;
+  overflow-x: hidden;
+  width: 199px;
+  padding-left: 5px;
+}
+
+#copy-icon{
+  height: 17px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.popup-footer{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: none;
+  align-items: center;
+}
+
+#delete-icon{
+  height: 17px;
+  padding-right: 4px;
+}

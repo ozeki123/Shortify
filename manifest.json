@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Shortify",
+  "version": "1.0",
+  "description": "A Youtube Shorts manager to save your favorite Youtube Shorts.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://www.google.com/*",
+    "https://www.youtube.com/*"
+  ]
+}

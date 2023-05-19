@@ -1,0 +1,65 @@
+<!-- button.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="popup.css"/>
+  </head>
+  <body>
+    <div id="popup-container">
+      <div class="popup-modal" id="modal">
+        <div class="modal-content">
+          <img id="modal-close" src="./assets/icons/close_icon.svg"/>
+          <div class="playlist-input-wrapper">
+            <label id="playlist-input-label">Playlist Name</label>
+            <input id="playlist-input" type="text" placeholder="Enter playlist name"/>
+            <div class="modal-buttons">
+              <p id="modal-text-limit">Max 20 chars.</p>
+              <button id="modal-cancel" class="modal-button">Cancel</button>
+              <button id="modal-save" class="modal-button">Save</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="popup-title">
+        <img id="shortify-logo" src="./assets/icons/s-logo.svg"/>
+        <h1 id="popup-heading">Shortify<span class="small">for Chrome</span></h1>
+      </div>
+      
+      <div class="input-wrapper">
+        <img id="link-icon" src="./assets/icons/link_icon.svg"/>
+        <input id="search-input" class="input" type="text" placeholder="Search Shorts"/>
+      </div>
+
+      <div class="shorts-heading">
+        <h2 id="shorts-title">Your Shorts</h2>
+        <div class="save-icon-wrapper" id="save-playlist">
+          <img id="save-icon" src="./assets/icons/save_icon.svg"/>
+          <p id="save-text">Save</p>
+        </div>
+        
+      </div>
+
+      <ul id="shorts-list">
+      </ul>
+
+      <div class="text-input" id="save-wrapper">
+        <div class="input-wrapper">
+          <img id="link-icon" src="./assets/icons/link_icon.svg"/>
+          <input id="popup-input" class="input" type="text" placeholder="Save by URL"/>
+        </div>
+        
+        <button id="save-button">Save</button>
+      </div>
+
+      <div class="popup-footer">
+        <!-- <div class="footer-contents"> -->
+          <img id="delete-icon" src="./assets/icons/delete_icon.svg"/>
+          <p>Clear All</p>
+        <!-- </div> -->
+      </div>
+    </div>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
